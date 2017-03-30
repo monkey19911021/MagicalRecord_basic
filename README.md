@@ -1,6 +1,7 @@
 
 注意！转载请注明[出处](http://mkapple.cn/2017/03/30/MagicalRecord_basic)和[作者](http://mkapple.cn)，谢谢
 
+__网站地址：[http://mkapple.cn](http://mkapple.cn/2017/03/30/MagicalRecord_basic)__
 ## 1. 安装
 源代码地址：[MagicalRecord](https://github.com/magicalpanda/MagicalRecord)
 
@@ -29,7 +30,7 @@ pod "MagicalRecord"
 
 3.建立数据模型
 
-![截图]({{ site.url }}/images/MagicalRecord/01.png)
+![截图](http://mkapple.cn/images/MagicalRecord/01.png)
 
 我增加了一个 Person 类，在使用到该实体的类里导入 Model+CoreDataModel.h 文件，因为系统会帮你生成 Person 类文件，如果没自动生成则需要手动创建；选中模型文件 ——> Editor ——> Create NSManagedobject Subclass；com + b 编译一下，发现报文件重复错误，则把刚自动生成的文件删除，再使用 __#import "Model+CoreDataModel.h"__ 就应该不会报错了，点进去也可以看到系统为你生成的类和属性。
 
@@ -125,20 +126,3 @@ NSArray *caloriesByMonth = [CTFoodDiaryEntry MR_aggregateOperation:@"sum:" onAtt
 
 ### 3.6 Demo地址
 [MagicalRecord_basic](https://github.com/monkey19911021/MagicalRecord_basic)
-
-<!-- 多说评论框 start -->
-<div class="ds-thread" data-thread-key="MagicalRecord_basic" data-title="MagicalRecord_basic" data-url="http://mkapple.cn/2017/03/30/MagicalRecord_basic"></div>
-<!-- 多说评论框 end -->
-<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-<script type="text/javascript">
-var duoshuoQuery = {short_name:"mkapple"};
-	(function() {
-		var ds = document.createElement('script');
-		ds.type = 'text/javascript';ds.async = true;
-		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-		ds.charset = 'UTF-8';
-		(document.getElementsByTagName('head')[0] 
-		 || document.getElementsByTagName('body')[0]).appendChild(ds);
-	})();
-	</script>
-<!-- 多说公共JS代码 end -->
