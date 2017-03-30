@@ -1,0 +1,6 @@
+framework module Pods_MagicalRecord_basic {
+  umbrella header "Pods-MagicalRecord_basic-umbrella.h"
+
+  export *
+  module * { export * }
+}
